@@ -1,5 +1,6 @@
 var React = require('react');
-var Link = require('react-router');
+var {Link, IndexLink} = require('react-router');
+
 
 var Nav = () => {
   return (
@@ -8,10 +9,10 @@ var Nav = () => {
         <ul className="dropdown menu" data-dropdown-menu>
           <li className="menu-text">React Timer App</li>
           <li>
-            <span activeclassNameName='active' activeStyle={{fontWeight:'bold'}}>Timer</span>
+            <IndexLink to="/" activeclassNameName='active' activeStyle={{fontWeight:'bold'}}>Timer</IndexLink>
           </li>
           <li>
-            <span activeclassNameName='active' activeStyle={{fontWeight:'bold'}}>CountDown</span>
+            <Link to="/countdown" activeclassNameName='active' activeStyle={{fontWeight:'bold'}}>CountDown</Link>
           </li>
         </ul>
       </div>
