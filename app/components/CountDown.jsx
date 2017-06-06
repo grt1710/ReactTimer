@@ -4,6 +4,6 @@ var CountDown = () => {
   return (
     <div>CountDown</div>
   );
-};
+}
 
 module.exports = CountDown;
